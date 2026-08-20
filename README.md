@@ -20,11 +20,12 @@
 <h3 align="center">📸 Screenshots</h3>
 
 <p align="center">
-  <img src="./screenshots/home.png" width="190">
-  <img src="./screenshots/search.png" width="190">
-  <img src="./screenshots/reels.png" width="190">
-  <img src="./screenshots/profile.png" width="190">
-  <img src="./screenshots/add-post.png" width="190">
+  <img src="./screenshots/home.jpeg" width="190">
+  <img src="./screenshots/search.jpeg" width="190">
+  <img src="./screenshots/reels.jpeg" width="190">
+  <img src="./screenshots/profile.jpeg" width="190">
+  <img src="./screenshots/add-post.jpeg" width="190">
+  <img src="./screenshots/login.jpeg" width="190">
 </p>
 
 <p align="center"><i>Instagram-style feed, search, reels, profile, and post creation experience.</i></p>
