@@ -3,7 +3,7 @@
 <h3 align="center">A modern Instagram-style React Native mobile application with authentication, photo feeds, reels, search, post creation, social interactions, and profile management.</h3>
 
 <p align="center">
-  <a href="YOUR_APK_DOWNLOAD_LINK_HERE" target="_blank">
+  <a href="https://drive.google.com/file/d/1azC25-qXeVksHdTmMIeNdNztCMZR2H_a/view?usp=sharing" target="_blank">
     <img src="https://img.shields.io/badge/📲%20Download%20APK-4CAF50?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
   </a>
 </p>
