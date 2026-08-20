@@ -40,7 +40,7 @@ export const SearchScreen = ({ navigation }) => {
 
   useEffect(() => {
     fetchPhotos();
-  }, []);
+  }, [fetchPhotos]);
 
   // Debounced search
   useEffect(() => {
@@ -48,7 +48,7 @@ export const SearchScreen = ({ navigation }) => {
       fetchPhotos(query);
     }, 600);
     return () => clearTimeout(timer);
-  }, [query]);
+  }, [query, fetchPhotos]);
 
   const renderSearchBar = () => (
     <View style={styles.searchBarContainer}>
@@ -74,28 +74,23 @@ export const SearchScreen = ({ navigation }) => {
   );
 
   const renderTopRow = () => {
-    if (photos.length < 5) return null;
+    if (photos.length < 3) return null;
     return (
       <View style={styles.topRow}>
         <View style={styles.topLeft}>
           <Image source={{ uri: photos[0].src.large }} style={styles.topLeftImage} resizeMode="cover" />
         </View>
-        <View style={styles.topMiddle}>
+        <View style={styles.topRight}>
           <Image source={{ uri: photos[1].src.medium }} style={styles.topHalfImage} resizeMode="cover" />
           <View style={styles.halfSpacer} />
           <Image source={{ uri: photos[2].src.medium }} style={styles.topHalfImage} resizeMode="cover" />
-        </View>
-        <View style={styles.topRight}>
-          <Image source={{ uri: photos[3].src.medium }} style={styles.topHalfImage} resizeMode="cover" />
-          <View style={styles.halfSpacer} />
-          <Image source={{ uri: photos[4].src.medium }} style={styles.topHalfImage} resizeMode="cover" />
         </View>
       </View>
     );
   };
 
   const renderGrid = () => {
-    const gridPhotos = photos.slice(5);
+    const gridPhotos = photos.slice(3);
     return (
       <View style={styles.grid}>
         {gridPhotos.map((photo, i) => (

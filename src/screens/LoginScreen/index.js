@@ -175,7 +175,6 @@ export const LoginScreen = ({ navigation }) => {
       {renderEmailInput()}
       {renderPasswordInput()}
       {renderActions()}
-      <Image source={require('../../assets/meta.PNG')} style={styles.metaLogo} resizeMode="contain" />
 
       <AppModal
         visible={modal.visible}

@@ -41,24 +41,20 @@ const styles = StyleSheet.create({
   // Top feature row
   topRow: {
     flexDirection: 'row',
-    height: 240,
+    height: GRID_ITEM_SIZE * 2 + 2,
     paddingHorizontal: 2,
     marginBottom: 2,
   },
   topLeft: {
-    flex: 1.1,
+    flex: 2,
     marginRight: 2,
   },
   topLeftImage: {
     width: '100%',
     height: '100%',
   },
-  topMiddle: {
-    flex: 0.85,
-    marginRight: 2,
-  },
   topRight: {
-    flex: 0.85,
+    flex: 1,
   },
   topHalfImage: {
     flex: 1,

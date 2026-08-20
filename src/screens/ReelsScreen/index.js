@@ -1,5 +1,5 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react';
-import { View, Text, FlatList, Dimensions, TouchableOpacity, Image } from 'react-native';
+import { View, Text, FlatList, Dimensions, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import Video from 'react-native-video';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useDispatch, useSelector } from 'react-redux';
@@ -116,7 +116,6 @@ export const ReelsScreen = () => {
   // Comment Modal state
   const [commentModalVisible, setCommentModalVisible] = useState(false);
   const [activeReelComments, setActiveReelComments] = useState([]);
-  const [activeReelId, setActiveReelId] = useState(null);
 
   const fetchInitial = async () => {
     setLoading(true);
@@ -163,7 +162,6 @@ export const ReelsScreen = () => {
   const viewabilityConfig = useRef({ itemVisiblePercentThreshold: 60 }).current;
 
   const handleOpenComments = (reel) => {
-    setActiveReelId(reel.id);
     setActiveReelComments(reel.comments || []);
     setCommentModalVisible(true);
   };

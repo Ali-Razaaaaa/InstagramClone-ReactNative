@@ -1,4 +1,4 @@
-import { mockStories, mockPosts } from '../mock/mockPosts';
+import { mockStories } from '../mock/mockPosts';
 import { PexelsClient } from '../api/PexelsClient';
 import { Post } from '../models/Post';
 

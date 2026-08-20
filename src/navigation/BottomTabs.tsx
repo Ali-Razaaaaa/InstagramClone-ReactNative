@@ -7,11 +7,14 @@ import { SearchScreen } from '../screens/SearchScreen';
 import { AddScreen } from '../screens/AddScreen';
 import { ReelsScreen } from '../screens/ReelsScreen';
 import { ProfileScreen } from '../screens/ProfileScreen';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors } from '../theme';
 
 const Tab = createBottomTabNavigator();
 
 export const BottomTabs = () => {
+  const insets = useSafeAreaInsets();
+
   return (
     <Tab.Navigator
       screenOptions={{
@@ -20,8 +23,8 @@ export const BottomTabs = () => {
           backgroundColor: colors.tabBar, 
           borderTopWidth: 0.5,
           borderTopColor: colors.tabBarBorder,
-          height: 60,
-          paddingBottom: 8,
+          height: 60 + insets.bottom,
+          paddingBottom: insets.bottom > 0 ? insets.bottom : 8,
           paddingTop: 8,
         },
         tabBarActiveTintColor: colors.text,

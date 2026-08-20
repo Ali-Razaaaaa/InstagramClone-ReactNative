@@ -166,8 +166,6 @@ export const SignUpScreen = ({ navigation }) => {
       {renderPasswordInput()}
       {renderConfirmPasswordInput()}
       {renderActions()}
-      <Image source={require('../../assets/meta.PNG')} style={styles.metaLogo} resizeMode="contain" />
-
       <AppModal
         visible={modal.visible}
         title={modal.title}
