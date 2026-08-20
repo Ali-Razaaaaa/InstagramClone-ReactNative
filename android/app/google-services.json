@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "603186305062",
+    "project_id": "instagramclone-129e4",
+    "storage_bucket": "instagramclone-129e4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603186305062:android:e8921cdaac3a09fd182ee7",
+        "android_client_info": {
+          "package_name": "com.instagramclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2iAV0PWnQYNpuTsdUmxwCoq-dyhncMTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
